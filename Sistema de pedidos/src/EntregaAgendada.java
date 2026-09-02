@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
+// Usei o time.temporal.ChronoUnit padroniza unidades de tempo e data pra facilitar calculos matematicos
 
 public class EntregaAgendada extends Entrega {
     private LocalDate dataAgendada;

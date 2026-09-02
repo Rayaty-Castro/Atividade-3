@@ -1,6 +1,7 @@
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
+// usei o DateTimeParseException é um erro do Java que acontece quando o programa tenta ler um texto e não consegue transformá-lo em uma data ou hora.
 import java.util.Scanner;
 
 public class Main {

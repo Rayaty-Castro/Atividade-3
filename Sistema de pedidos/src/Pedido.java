@@ -33,11 +33,6 @@ public class Pedido {
             throw new IllegalArgumentException("O nome do cliente é obrigatório.");
         }
 
-        // Expressão regular: Permite apenas letras (incluindo acentuadas e ç) e espaços
-        if (!cliente.matches("^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÊÍÏÓÔÕÖÚÇÑ\\s]+$")) {
-            throw new IllegalArgumentException("O nome do cliente deve conter apenas letras.");
-        }
-
         this.cliente = cliente;
     }
 
@@ -58,6 +53,6 @@ public class Pedido {
         System.out.printf("Frete: R$ %.2f\n", calcularFrete());
         System.out.printf("Total: R$ %.2f\n", calcularTotal());
         System.out.println("Prazo: " + modalidadeEntrega.calcularPrazo() + " dias");
-        System.out.println("----------------------------------------");
+
     }
 }

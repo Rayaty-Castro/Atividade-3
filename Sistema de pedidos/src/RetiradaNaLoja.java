@@ -6,12 +6,12 @@ public class RetiradaNaLoja extends Entrega {
 
     @Override
     public double calcularFrete(double pesoProdutos) {
-        return 0.0; // Regra 5: sem frete
+        return 0.0; // Regra para ser sem frete
     }
 
     @Override
     public int calcularPrazo() {
-        return 0; // Pronta para retirada
+        return 0; // Pronto para retirada
     }
 
     @Override
